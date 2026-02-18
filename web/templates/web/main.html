@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dataset MX</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
+    header { background: linear-gradient(135deg, #0b3d91, #1e62c6); color: white; text-align: center; padding: 100px 20px; }
+    header h1 { font-size: 48px; margin-bottom: 10px; }
+    header p { font-size: 22px; }
+    section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+    h2 { color: #0b3d91; font-size: 36px; margin-bottom: 30px; text-align: center; }
+    h3 { color: #1e62c6; margin-bottom: 15px; }
+    p { font-size: 18px; margin-bottom: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .card { background: #f7f9fc; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: translateY(-10px); }
+    .cta { background: #0b3d91; color: white; text-align: center; padding: 80px 20px; }
+    .cta a { display: inline-block; margin-top: 30px; padding: 15px 35px; background: white; color: #0b3d91; text-decoration: none; font-weight: bold; border-radius: 8px; transition: background 0.3s; }
+    .cta a:hover { background: #e1e1e1; }
+    footer { background: #111; color: white; text-align: center; padding: 30px 20px; font-size: 16px; }
+    @media(max-width:768px){ header h1 { font-size: 36px; } header p { font-size: 18px; } h2 { font-size: 28px; } }
+  </style>
+</head>
+<body>
+
+<header style="background: rgba(11, 61, 145, 0.65); color: white; display: flex; align-items: center; justify-content: space-between; padding: 20px 50px;">
+  <div style="display: flex; align-items: center;">
+    <img src="static/images/logo.png" alt="Dataset MX" style="max-width: 80px; margin-right: 20px;">
+    <div>
+      
+      <h1 style="font-size: 14px; margin: 2px 0 0 0;">Transformamos tus datos en decisiones claras</h1>
+    </div>
+  </div>
+  <a href="mailto:leonel.luna@dataset.mx" style="background: white; color: #0b3d91; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold;">Contactar</a>
+</header>
+
+<section>
+  <h2>Conoce Dataset MX</h2>
+
+  <div class="carousel">
+    <div class="slides">
+      <img src="static/images/2.png" alt="Página 2">
+      <img src="static/images/3.png" alt="Página 3">
+      <img src="static/images/4.png" alt="Página 4">
+      <img src="static/images/5.png" alt="Página 5">
+      <img src="static/images/6.png" alt="Página 6">
+      <img src="static/images/7.png" alt="Página 7">
+      <img src="static/images/8.png" alt="Página 8">
+      <img src="static/images/9.png" alt="Página 9">
+      <img src="static/images/10.png" alt="Página 10">
+      <img src="static/images/11.png" alt="Página 11">
+      <img src="static/images/12.png" alt="Página 12">
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</section>
+
+<style>
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+}
+
+.slides img.active {
+  display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px 18px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  background: rgba(0,0,0,0.5);
+  border: none;
+  border-radius: 50%;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+</style>
+
+<script>
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slides img');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if(i === index) slide.classList.add('active');
+  });
+}
+
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % slides.length;
+  showSlide(slideIndex);
+}
+
+function prevSlide() {
+  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  showSlide(slideIndex);
+}
+
+// Inicial
+showSlide(slideIndex);
+
+// Auto slide cada 5 segundos
+setInterval(nextSlide, 5000);
+
+// Botones
+document.querySelector('.next').addEventListener('click', nextSlide);
+document.querySelector('.prev').addEventListener('click', prevSlide);
+</script>
+
+<section>
+  <h2>¡INTERACTÚA!</h2>
+  <h2>Dashboard de ventas</h2>
+  <p>Visualiza métricas clave y reportes interactivos directamente desde Power BI.</p>
+  <iframe 
+      title="Reporte Power BI Dataset MX"
+      width="100%" 
+      height="700px"
+      src="https://app.powerbi.com/view?r=eyJrIjoiOGQ0NTI2OGYtMDIyMi00ZjFkLWFhMGEtYWZiNWY4Y2FmYTIwIiwidCI6ImJlNjk2MDQzLWNkNmMtNDlmMy04MjA5LWU0N2NjOGE4YjVkMCIsImMiOjR9"
+      frameborder="0" 
+      allowFullScreen="true">
+  </iframe>
+</section>
+
+<section>
+  <h2>Situación Actual</h2>
+  <p>Muchas empresas enfrentan problemas con información desorganizada, datos incompletos o desactualizados, procesos manuales lentos y dificultad para generar reportes oportunos, limitando su capacidad de tomar decisiones rápidas y precisas.</p>
+  <div class="grid">
+    <div class="card">Inconsistencias en registros de ventas</div>
+    <div class="card">Problemas en seguimiento de devoluciones</div>
+    <div class="card">Errores en análisis de rentabilidad</div>
+    <div class="card">Incapacidad para optimizar inventarios</div>
+  </div>
+</section>
+
+<section>
+  <h2>Qué te ofrece Dataset MX</h2>
+  <div class="grid">
+    <div class="card">Desarrollo de software para adquisición de datos</div>
+    <div class="card">Desarrollo de bases de datos</div>
+    <div class="card">Generación de dashboards para visualización de métricas con BI</div>
+    <div class="card">Automatización de reportes</div>
+    <div class="card">Análisis predictivos con IA</div>
+    <div class="card">Digitalización de procesos</div>
+    <div class="card">Desarrollo de procedimientos para limpieza y análisis de datos</div>
+    <div class="card">Consultoría de manejo de datos</div>
+  </div>
+</section>
+
+<section>
+  <h2>Resultados Comprobados</h2>
+  <p>Antes: generación de reportes en aproximadamente 4 horas.</p>
+  <p>Ahora: generación de reportes en 3 a 4 minutos. Esto representa una reducción del tiempo de hasta un 98%, permitiendo decisiones prácticamente en tiempo real y liberando recursos clave del negocio.</p>
+</section>
+
+<section>
+  <h2>Cultura Empresarial</h2>
+  <div class="grid">
+    <div class="card"><h3>Misión</h3><p>Potenciar el valor de los datos para empresas en México, ofreciendo soluciones integrales de consultoría que transformen la información en insights accionables.</p></div>
+    <div class="card"><h3>Visión</h3><p>Ser el referente líder en consultoría de gestión de datos en México, reconocidos por nuestra capacidad para generar valor tangible a través de soluciones innovadoras y personalizadas.</p></div>
+    <div class="card"><h3>Compromiso con la excelencia</h3><p>Mantener los más altos estándares de calidad en nuestros servicios, buscando continuamente la excelencia en cada aspecto del trabajo.</p></div>
+    <div class="card"><h3>Empatía y colaboración</h3><p>Valoramos la escucha activa, la empatía y la colaboración con clientes, colegas y socios para alcanzar resultados óptimos.</p></div>
+    <div class="card"><h3>Innovación continua</h3><p>Adoptamos tecnologías emergentes para ofrecer soluciones innovadoras que anticipen las necesidades futuras de nuestros clientes.</p></div>
+    <div class="card"><h3>Integridad y ética</h3><p>Actuamos con integridad, honestidad y ética en todas nuestras interacciones, manteniendo la confianza y el respeto de clientes y colaboradores.</p></div>
+    <div class="card"><h3>Responsabilidad social y ambiental</h3><p>Operamos de manera sostenible, minimizando el impacto ambiental y contribuyendo al desarrollo social y económico con equidad e inclusión.</p></div>
+  </div>
+</section>
+<section>
+  <h2>Nuestros Clientes</h2>
+  <p>Empresas que han confiado en Dataset MX para transformar sus datos en decisiones estratégicas.</p>
+  <div class="clientes-grid">
+    <div class="cliente-card"><img src="static/images/cliente.png" alt="Cliente 1"></div>
+    <div class="cliente-card"><img src="static/images/cliente2.png" alt="Cliente 2"></div>
+  </div>
+</section>
+
+<style>
+  .clientes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .cliente-card {
+    background: #f7f9fc;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  .cliente-card:hover {
+    transform: translateY(-10px);
+  }
+  .cliente-card img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+  }
+</style>
+
+<section class="cta">
+  <h2>Contacto</h2>
+  <p>Ing. Leonel Luna<br>leonel.luna@dataset.mx<br>(664) 419 04 12</p>
+  <a href="mailto:leonel.luna@dataset.mx">Enviar Correo</a>
+</section>
+
+<footer>
+  <p>© 2026 dataset.mx | Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
