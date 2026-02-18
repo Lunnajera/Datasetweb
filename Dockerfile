@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 RUN python manage.py collectstatic --noinput
-CMD exec gunicorn datasetmx.wsgi:application --bind 0.0.0.0:8080
+CMD exec gunicorn datasetmx.wsgi:application --bind :$PORT
