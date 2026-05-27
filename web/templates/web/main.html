@@ -1,241 +1,912 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Dataset MX</title>
+
+  <!-- FUENTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
-    header { background: linear-gradient(135deg, #0b3d91, #1e62c6); color: white; text-align: center; padding: 100px 20px; }
-    header h1 { font-size: 48px; margin-bottom: 10px; }
-    header p { font-size: 22px; }
-    section { padding: 80px 20px; max-width: 1200px; margin: auto; }
-    h2 { color: #0b3d91; font-size: 36px; margin-bottom: 30px; text-align: center; }
-    h3 { color: #1e62c6; margin-bottom: 15px; }
-    p { font-size: 18px; margin-bottom: 20px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-    .card { background: #f7f9fc; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
-    .card:hover { transform: translateY(-10px); }
-    .cta { background: #0b3d91; color: white; text-align: center; padding: 80px 20px; }
-    .cta a { display: inline-block; margin-top: 30px; padding: 15px 35px; background: white; color: #0b3d91; text-decoration: none; font-weight: bold; border-radius: 8px; transition: background 0.3s; }
-    .cta a:hover { background: #e1e1e1; }
-    footer { background: #111; color: white; text-align: center; padding: 30px 20px; font-size: 16px; }
-    @media(max-width:768px){ header h1 { font-size: 36px; } header p { font-size: 18px; } h2 { font-size: 28px; } }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Inter', sans-serif;
+      background:#f8fafc;
+      color:#1e293b;
+      line-height:1.7;
+    }
+
+    /* =========================
+       TOPBAR
+    ========================= */
+
+    .topbar{
+      position:fixed;
+      top:0;
+      left:0;
+
+      width:100%;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+
+      padding:18px 50px;
+
+      background:rgba(4,12,24,0.55);
+
+      backdrop-filter:blur(14px);
+
+      border-bottom:
+      1px solid rgba(255,255,255,0.08);
+
+      z-index:999;
+    }
+
+    .topbar-left{
+      display:flex;
+      align-items:center;
+    }
+
+    .logo{
+      width:70px;
+      margin-right:18px;
+    }
+
+    .topbar-text h1{
+      font-family:'Poppins', sans-serif;
+      font-size:28px;
+      font-weight:700;
+      color:white;
+      margin-bottom:2px;
+      letter-spacing:-1px;
+    }
+
+    .topbar-text p{
+      color:rgba(255,255,255,0.7);
+      font-size:14px;
+      margin:0;
+    }
+
+    .topbar-btn{
+      display:inline-block;
+      background:white;
+      color:#0b3d91;
+      padding:12px 24px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:700;
+      transition:.3s ease;
+      box-shadow:
+      0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .topbar-btn:hover{
+      transform:translateY(-3px);
+      background:#dbeafe;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero{
+      position:relative;
+
+      width:100%;
+      min-height:100vh;
+      max-width:none;
+
+      background:
+      linear-gradient(
+        rgba(4,12,24,0.15),
+        rgba(4,12,24,0.25)
+      ),
+      url('static/images/tech.gif');
+
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+
+      display:flex;
+      align-items:center;
+
+      overflow:hidden;
+    }
+
+    .hero-overlay{
+      position:absolute;
+      inset:0;
+      backdrop-filter:blur(2px);
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+      width:100%;
+      padding-left:120px;
+      padding-right:40px;
+    }
+
+    .hero-brand{
+      max-width:900px;
+    }
+
+    .hero h2{
+      font-family:'Poppins', sans-serif;
+      font-size:110px;
+      font-weight:800;
+      line-height:1;
+      color:white;
+      margin-bottom:28px;
+      letter-spacing:-4px;
+
+      text-shadow:
+      0 10px 30px rgba(0,0,0,0.35);
+    }
+
+    .hero-divider{
+      width:140px;
+      height:6px;
+      border-radius:999px;
+      margin-bottom:35px;
+
+      background:
+      linear-gradient(to right,#3b82f6,#60a5fa);
+    }
+
+    .hero p{
+      font-size:32px;
+      font-weight:500;
+      line-height:1.5;
+      color:rgba(255,255,255,0.92);
+      margin-bottom:45px;
+      max-width:950px;
+    }
+
+    .hero-btn{
+      display:inline-block;
+      background:white;
+      color:#0b3d91;
+      padding:18px 38px;
+      border-radius:14px;
+      text-decoration:none;
+      font-size:18px;
+      font-weight:700;
+      transition:all .3s ease;
+
+      box-shadow:
+      0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .hero-btn:hover{
+      transform:translateY(-5px);
+      background:#dbeafe;
+    }
+
+    /* =========================
+       SECCIONES
+    ========================= */
+
+    section{
+      padding:100px 30px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    h2{
+      font-family:'Poppins', sans-serif;
+      font-size:48px;
+      font-weight:700;
+      text-align:center;
+      color:#0b3d91;
+      margin-bottom:25px;
+      letter-spacing:-1px;
+    }
+
+    h3{
+      font-family:'Poppins', sans-serif;
+      color:#0f172a;
+      font-size:24px;
+      margin-bottom:15px;
+    }
+
+    p{
+      font-size:18px;
+      color:#475569;
+      margin-bottom:20px;
+    }
+
+    /* =========================
+       CARRUSEL
+    ========================= */
+
+    .carousel{
+      position:relative;
+      max-width:950px;
+      margin:50px auto;
+      overflow:hidden;
+      border-radius:28px;
+
+      box-shadow:
+      0 20px 50px rgba(0,0,0,0.15);
+    }
+
+    .slides img{
+      width:100%;
+      display:none;
+    }
+
+    .slides img.active{
+      display:block;
+    }
+
+    .prev,
+    .next{
+      cursor:pointer;
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      padding:12px 20px;
+      background:rgba(0,0,0,0.45);
+      color:white;
+      border:none;
+      border-radius:50%;
+      font-size:26px;
+      transition:.3s;
+    }
+
+    .prev:hover,
+    .next:hover{
+      background:rgba(0,0,0,0.8);
+    }
+
+    .prev{
+      left:15px;
+    }
+
+    .next{
+      right:15px;
+    }
+
+    /* =========================
+       DASHBOARD
+    ========================= */
+
+    .dashboard-section{
+      background:
+      linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b
+      );
+
+      border-radius:40px;
+
+      padding:90px 40px;
+
+      margin-top:40px;
+      margin-bottom:40px;
+
+      box-shadow:
+      0 20px 50px rgba(15,23,42,0.25);
+    }
+
+    .dashboard-section h2,
+    .dashboard-section p{
+      color:white;
+    }
+
+    iframe{
+      border:none;
+      border-radius:28px;
+      overflow:hidden;
+
+      box-shadow:
+      0 20px 50px rgba(0,0,0,0.25);
+    }
+
+    /* =========================
+       WHY SECTION
+    ========================= */
+
+    .why-section{
+      max-width:1300px;
+    }
+
+    .why-header{
+      text-align:center;
+      margin-bottom:70px;
+    }
+
+    .why-badge{
+      display:inline-block;
+      background:#dbeafe;
+      color:#0b3d91;
+      padding:10px 18px;
+      border-radius:999px;
+      font-size:14px;
+      font-weight:700;
+      letter-spacing:1px;
+      margin-bottom:25px;
+    }
+
+    .why-header h2{
+      font-size:56px;
+      margin-bottom:25px;
+    }
+
+    .why-header p{
+      max-width:850px;
+      margin:auto;
+      font-size:22px;
+      color:#64748b;
+    }
+
+    .why-grid{
+      display:grid;
+
+      grid-template-columns:
+      repeat(auto-fit,minmax(320px,1fr));
+
+      gap:30px;
+    }
+
+    .why-card{
+      position:relative;
+      background:white;
+      padding:40px;
+      border-radius:30px;
+      overflow:hidden;
+
+      border:1px solid rgba(0,0,0,0.05);
+
+      box-shadow:
+      0 15px 35px rgba(0,0,0,0.06);
+
+      transition:all .35s ease;
+    }
+
+    .why-card:hover{
+      transform:translateY(-12px);
+
+      box-shadow:
+      0 25px 60px rgba(0,0,0,0.12);
+    }
+
+    .why-card::before{
+      content:"";
+
+      position:absolute;
+      top:0;
+      left:0;
+
+      width:100%;
+      height:5px;
+
+      background:
+      linear-gradient(to right,#2563eb,#60a5fa);
+    }
+
+    .why-icon{
+      width:70px;
+      height:70px;
+      border-radius:20px;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      font-size:34px;
+
+      background:#eff6ff;
+
+      margin-bottom:28px;
+    }
+
+    .why-card p{
+      color:#64748b;
+    }
+
+    /* =========================
+       CLIENTES
+    ========================= */
+
+    .clientes-grid{
+      display:grid;
+
+      grid-template-columns:
+      repeat(auto-fit,minmax(220px,1fr));
+
+      gap:30px;
+
+      justify-items:center;
+      align-items:center;
+
+      padding-top:30px;
+    }
+
+    .cliente-card{
+      background:white;
+
+      border-radius:24px;
+
+      padding:35px;
+
+      width:100%;
+      min-height:170px;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      border:1px solid rgba(0,0,0,0.04);
+
+      box-shadow:
+      0 10px 30px rgba(0,0,0,0.08);
+
+      transition:all .35s ease;
+    }
+
+    .cliente-card:hover{
+      transform:translateY(-10px);
+
+      box-shadow:
+      0 20px 45px rgba(0,0,0,0.12);
+    }
+
+    .cliente-card img{
+      max-width:100%;
+      max-height:90px;
+      object-fit:contain;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta{
+      background:
+      linear-gradient(135deg,#0b3d91,#1e62c6);
+
+      color:white;
+
+      text-align:center;
+
+      border-radius:35px;
+
+      margin-top:60px;
+      margin-bottom:60px;
+    }
+
+    .cta h2{
+      color:white;
+    }
+
+    .cta p{
+      color:rgba(255,255,255,0.9);
+      font-size:22px;
+    }
+
+    .cta a{
+      display:inline-block;
+
+      margin-top:20px;
+
+      background:white;
+      color:#0b3d91;
+
+      padding:16px 32px;
+
+      border-radius:14px;
+
+      text-decoration:none;
+
+      font-weight:700;
+
+      transition:.3s;
+    }
+
+    .cta a:hover{
+      transform:translateY(-4px);
+      background:#dbeafe;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer{
+      background:#0f172a;
+      color:#cbd5e1;
+      text-align:center;
+      padding:40px 20px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media(max-width:768px){
+
+      .topbar{
+        padding:16px 20px;
+      }
+
+      .logo{
+        width:55px;
+      }
+
+      .topbar-text h1{
+        font-size:22px;
+      }
+
+      .topbar-btn{
+        padding:10px 18px;
+        font-size:14px;
+      }
+
+      .hero-content{
+        padding:0 30px;
+      }
+
+      .hero h2{
+        font-size:58px;
+      }
+
+      .hero p{
+        font-size:22px;
+      }
+
+      h2{
+        font-size:36px;
+      }
+
+      p{
+        font-size:16px;
+      }
+
+      .why-header h2{
+        font-size:40px;
+      }
+
+      .why-header p{
+        font-size:18px;
+      }
+
+    }
+
   </style>
+
 </head>
+
 <body>
 
-<header style="background: rgba(11, 61, 145, 0.65); color: white; display: flex; align-items: center; justify-content: space-between; padding: 20px 50px;">
-  <div style="display: flex; align-items: center;">
-    <img src="static/images/logo.png" alt="Dataset MX" style="max-width: 80px; margin-right: 20px;">
-    <div>
-      
-      <h1 style="font-size: 14px; margin: 2px 0 0 0;">Transformamos tus datos en decisiones claras</h1>
+  <!-- TOPBAR -->
+
+  <header class="topbar">
+
+    <div class="topbar-left">
+
+      <img 
+        src="static/images/logo.png"
+        alt="Dataset MX"
+        class="logo"
+      >
+
+      <div class="topbar-text">
+
+        <h1>Dataset MX</h1>
+
+        <p>
+          Business Intelligence & Automatización
+        </p>
+
+      </div>
+
     </div>
-  </div>
-  <a href="mailto:leonel.luna@dataset.mx" style="background: white; color: #0b3d91; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold;">Contactar</a>
-</header>
 
-<section>
-  <h2>Conoce Dataset MX</h2>
+    <a href="mailto:leonel.luna@dataset.mx" class="topbar-btn">
+      Contactar
+    </a>
 
-  <div class="carousel">
-    <div class="slides">
-      <img src="static/images/2.png" alt="Página 2">
-      <img src="static/images/3.png" alt="Página 3">
-      <img src="static/images/4.png" alt="Página 4">
-      <img src="static/images/5.png" alt="Página 5">
-      <img src="static/images/6.png" alt="Página 6">
-      <img src="static/images/7.png" alt="Página 7">
-      <img src="static/images/8.png" alt="Página 8">
-      <img src="static/images/9.png" alt="Página 9">
-      <img src="static/images/10.png" alt="Página 10">
-      <img src="static/images/11.png" alt="Página 11">
-      <img src="static/images/12.png" alt="Página 12">
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <div class="hero-brand">
+
+        <h2>Dataset MX</h2>
+
+        <div class="hero-divider"></div>
+
+        <p>
+          Transformamos datos en información clara y útil para ayudar a las empresas
+          a tomar mejores decisiones mediante Business Intelligence y automatización.
+        </p>
+
+        <a href="mailto:leonel.luna@dataset.mx" class="hero-btn">
+          Conocer más
+        </a>
+
+      </div>
+
     </div>
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
-  </div>
-</section>
 
-<style>
-.carousel {
-  position: relative;
-  max-width: 900px;
-  margin: 40px auto;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
+  </section>
 
-.slides img {
-  width: 100%;
-  display: none;
-}
+  <!-- PRESENTACION -->
 
-.slides img.active {
-  display: block;
-}
+  <section>
 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 10px 18px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
-  background: rgba(0,0,0,0.5);
-  border: none;
-  border-radius: 50%;
-  user-select: none;
-  transition: 0.3s;
-}
+    <h2>Conoce Dataset MX</h2>
 
-.prev:hover, .next:hover {
-  background: rgba(0,0,0,0.8);
-}
+    <div class="carousel">
 
-.prev { left: 10px; }
-.next { right: 10px; }
-</style>
+      <div class="slides">
 
-<script>
-let slideIndex = 0;
-const slides = document.querySelectorAll('.slides img');
+        <img src="static/images/2.png" class="active">
+        <img src="static/images/3.png">
+        <img src="static/images/4.png">
+        <img src="static/images/5.png">
+        <img src="static/images/6.png">
+        <img src="static/images/7.png">
+        <img src="static/images/8.png">
+        <img src="static/images/9.png">
+        <img src="static/images/10.png">
+        <img src="static/images/11.png">
+        <img src="static/images/12.png">
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    if(i === index) slide.classList.add('active');
-  });
-}
+      </div>
 
-function nextSlide() {
-  slideIndex = (slideIndex + 1) % slides.length;
-  showSlide(slideIndex);
-}
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
 
-function prevSlide() {
-  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-  showSlide(slideIndex);
-}
+    </div>
 
-// Inicial
-showSlide(slideIndex);
+  </section>
 
-// Auto slide cada 5 segundos
-setInterval(nextSlide, 5000);
+  <!-- DASHBOARD -->
 
-// Botones
-document.querySelector('.next').addEventListener('click', nextSlide);
-document.querySelector('.prev').addEventListener('click', prevSlide);
-</script>
+  <section class="dashboard-section">
 
-<section>
-  <h2>¡INTERACTÚA!</h2>
-  <h2>Dashboard de ventas</h2>
-  <p>Visualiza métricas clave y reportes interactivos directamente desde Power BI.</p>
-  <iframe 
+    <h2>Dashboard Interactivo</h2>
+
+    <p style="text-align:center; max-width:900px; margin:auto auto 40px auto;">
+      Visualiza métricas clave y reportes interactivos desarrollados con Power BI
+      para transformar información en decisiones estratégicas.
+    </p>
+
+    <iframe
       title="Reporte Power BI Dataset MX"
-      width="100%" 
+      width="100%"
       height="700px"
       src="https://app.powerbi.com/view?r=eyJrIjoiOGQ0NTI2OGYtMDIyMi00ZjFkLWFhMGEtYWZiNWY4Y2FmYTIwIiwidCI6ImJlNjk2MDQzLWNkNmMtNDlmMy04MjA5LWU0N2NjOGE4YjVkMCIsImMiOjR9"
-      frameborder="0" 
-      allowFullScreen="true">
-  </iframe>
-</section>
+      allowfullscreen="true">
+    </iframe>
 
-<section>
-  <h2>Situación Actual</h2>
-  <p>Muchas empresas enfrentan problemas con información desorganizada, datos incompletos o desactualizados, procesos manuales lentos y dificultad para generar reportes oportunos, limitando su capacidad de tomar decisiones rápidas y precisas.</p>
-  <div class="grid">
-    <div class="card">Inconsistencias en registros de ventas</div>
-    <div class="card">Problemas en seguimiento de devoluciones</div>
-    <div class="card">Errores en análisis de rentabilidad</div>
-    <div class="card">Incapacidad para optimizar inventarios</div>
-  </div>
-</section>
+  </section>
 
-<section>
-  <h2>Qué te ofrece Dataset MX</h2>
-  <div class="grid">
-    <div class="card">Desarrollo de software para adquisición de datos</div>
-    <div class="card">Desarrollo de bases de datos</div>
-    <div class="card">Generación de dashboards para visualización de métricas con BI</div>
-    <div class="card">Automatización de reportes</div>
-    <div class="card">Análisis predictivos con IA</div>
-    <div class="card">Digitalización de procesos</div>
-    <div class="card">Desarrollo de procedimientos para limpieza y análisis de datos</div>
-    <div class="card">Consultoría de manejo de datos</div>
-  </div>
-</section>
+  <!-- WHY DATASET MX -->
 
-<section>
-  <h2>Resultados Comprobados</h2>
-  <p>Antes: generación de reportes en aproximadamente 4 horas.</p>
-  <p>Ahora: generación de reportes en 3 a 4 minutos. Esto representa una reducción del tiempo de hasta un 98%, permitiendo decisiones prácticamente en tiempo real y liberando recursos clave del negocio.</p>
-</section>
+  <section class="why-section">
 
-<section>
-  <h2>Cultura Empresarial</h2>
-  <div class="grid">
-    <div class="card"><h3>Misión</h3><p>Potenciar el valor de los datos para empresas en México, ofreciendo soluciones integrales de consultoría que transformen la información en insights accionables.</p></div>
-    <div class="card"><h3>Visión</h3><p>Ser el referente líder en consultoría de gestión de datos en México, reconocidos por nuestra capacidad para generar valor tangible a través de soluciones innovadoras y personalizadas.</p></div>
-    <div class="card"><h3>Compromiso con la excelencia</h3><p>Mantener los más altos estándares de calidad en nuestros servicios, buscando continuamente la excelencia en cada aspecto del trabajo.</p></div>
-    <div class="card"><h3>Empatía y colaboración</h3><p>Valoramos la escucha activa, la empatía y la colaboración con clientes, colegas y socios para alcanzar resultados óptimos.</p></div>
-    <div class="card"><h3>Innovación continua</h3><p>Adoptamos tecnologías emergentes para ofrecer soluciones innovadoras que anticipen las necesidades futuras de nuestros clientes.</p></div>
-    <div class="card"><h3>Integridad y ética</h3><p>Actuamos con integridad, honestidad y ética en todas nuestras interacciones, manteniendo la confianza y el respeto de clientes y colaboradores.</p></div>
-    <div class="card"><h3>Responsabilidad social y ambiental</h3><p>Operamos de manera sostenible, minimizando el impacto ambiental y contribuyendo al desarrollo social y económico con equidad e inclusión.</p></div>
-  </div>
-</section>
-<section>
-  <h2>Nuestros Clientes</h2>
-  <p>Empresas que han confiado en Dataset MX para transformar sus datos en decisiones estratégicas.</p>
-  <div class="clientes-grid">
-    <div class="cliente-card"><img src="static/images/cliente.png" alt="Cliente 1"></div>
-    <div class="cliente-card"><img src="static/images/cliente2.png" alt="Cliente 2"></div>
-  </div>
-</section>
+    <div class="why-header">
 
-<style>
-  .clientes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 30px;
-    justify-items: center;
-    align-items: center;
-    padding-top: 30px;
-  }
-  .cliente-card {
-    background: #f7f9fc;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
-  .cliente-card:hover {
-    transform: translateY(-10px);
-  }
-  .cliente-card img {
-    max-width: 100%;
-    max-height: 80px;
-    object-fit: contain;
-  }
-</style>
+      <span class="why-badge">
+        DATASET MX
+      </span>
 
-<section class="cta">
-  <h2>Contacto</h2>
-  <p>Ing. Leonel Luna<br>leonel.luna@dataset.mx<br>(664) 419 04 12</p>
-  <a href="mailto:leonel.luna@dataset.mx">Enviar Correo</a>
-</section>
+      <h2>¿Por qué elegir Dataset MX?</h2>
 
-<footer>
-  <p>© 2026 dataset.mx | Todos los derechos reservados</p>
-</footer>
+      <p>
+        Impulsamos empresas mediante Business Intelligence,
+        automatización y analítica de datos.
+      </p>
+
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-icon">📊</div>
+        <h3>Decisiones claras</h3>
+        <p>
+          Transformamos datos en decisiones claras y accionables.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h3>Automatización</h3>
+        <p>
+          Automatizamos procesos para ahorrar tiempo y reducir errores.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">📈</div>
+        <h3>Dashboards intuitivos</h3>
+        <p>
+          Creamos dashboards modernos y fáciles de utilizar.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🗂️</div>
+        <h3>Información centralizada</h3>
+        <p>
+          Centralizamos información crítica en un solo lugar.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🤖</div>
+        <h3>Nuevas tecnologías</h3>
+        <p>
+          Ayudamos en la implementación de tecnologías modernas.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">⚙️</div>
+        <h3>Optimización operativa</h3>
+        <p>
+          Mejoramos procesos operativos para incrementar eficiencia.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">⏱️</div>
+        <h3>Tiempo real</h3>
+        <p>
+          Información en tiempo real para mejores decisiones.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🎯</div>
+        <h3>Soluciones personalizadas</h3>
+        <p>
+          Soluciones adaptadas a las necesidades de cada empresa.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🤝</div>
+        <h3>Acompañamiento</h3>
+        <p>
+          Soporte y acompañamiento durante todo el proceso.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CLIENTES -->
+
+  <section>
+
+    <h2>Nuestros Clientes</h2>
+
+    <p style="text-align:center; max-width:800px; margin:auto auto 40px auto;">
+      Empresas que han confiado en Dataset MX para transformar sus datos en decisiones estratégicas.
+    </p>
+
+    <div class="clientes-grid">
+
+      <div class="cliente-card">
+        <img src="static/images/cliente.png" alt="Cliente 1">
+      </div>
+
+      <div class="cliente-card">
+        <img src="static/images/cliente2.png" alt="Cliente 2">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACTO -->
+
+  <section class="cta">
+
+    <h2>Contacto</h2>
+
+    <p>
+      Ing. Leonel Luna<br>
+      leonel.luna@dataset.mx
+    </p>
+
+    <a href="mailto:leonel.luna@dataset.mx">
+      Enviar Correo
+    </a>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <p>© 2026 dataset.mx | Todos los derechos reservados</p>
+  </footer>
+
+  <!-- SCRIPT -->
+
+  <script>
+
+    let slideIndex = 0;
+
+    const slides = document.querySelectorAll('.slides img');
+
+    function showSlide(index){
+
+      slides.forEach((slide, i) => {
+
+        slide.classList.remove('active');
+
+        if(i === index){
+          slide.classList.add('active');
+        }
+
+      });
+
+    }
+
+    function nextSlide(){
+
+      slideIndex = (slideIndex + 1) % slides.length;
+
+      showSlide(slideIndex);
+
+    }
+
+    function prevSlide(){
+
+      slideIndex =
+      (slideIndex - 1 + slides.length) % slides.length;
+
+      showSlide(slideIndex);
+
+    }
+
+    showSlide(slideIndex);
+
+    setInterval(nextSlide, 5000);
+
+    document
+      .querySelector('.next')
+      .addEventListener('click', nextSlide);
+
+    document
+      .querySelector('.prev')
+      .addEventListener('click', prevSlide);
+
+  </script>
 
 </body>
+
 </html>
