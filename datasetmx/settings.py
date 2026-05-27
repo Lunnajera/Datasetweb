@@ -43,19 +43,19 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',         # archivo SQLite
     }
 }
-DEBUG = True
+DEBUG = False
 #DEBUG = True
 CSRF_TRUSTED_ORIGINS = [
-    "https://piyleo.com",
-    "https://www.piyleo.com",
+    'https://dataset.mx',
+    'https://www.dataset.mx',
 ]
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
-    "piyleo.com",
-    "www.piyleo.com",
-    ".run.app",
+    'localhost',
+    '127.0.0.1',
+    '.run.app',
+    'dataset.mx',
+    'www.dataset.mx',
 ]
 USE_X_FORWARDED_HOST = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
@@ -67,4 +67,4 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 ROOT_URLCONF = 'datasetmx.urls'
 SECRET_KEY = 'django-insecure-esto-es-solo-para-desarrollo-local-123456'
-
+WSGI_APPLICATION = 'datasetmx.wsgi.application'
