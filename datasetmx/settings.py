@@ -68,3 +68,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 ROOT_URLCONF = 'datasetmx.urls'
 SECRET_KEY = 'django-insecure-esto-es-solo-para-desarrollo-local-123456'
 WSGI_APPLICATION = 'datasetmx.wsgi.application'
+

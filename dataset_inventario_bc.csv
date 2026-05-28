@@ -1,0 +1,289 @@
+inv_id,ciudad,categoria,producto,proveedor,stock_actual,stock_minimo,stock_maximo,estado_inventario,costo_unitario,precio_venta,dias_sin_movimiento,ultima_entrada,prox_reabasto
+I0001,Tijuana,Electrónica,Televisores,Logística Frontera,26,26,156,Óptimo,733.09,867.71,65,2025-05-19,2025-08-02
+I0002,Mexicali,Electrónica,Televisores,Proveedor Norte SA,223,34,204,Sobrestock,761.74,4761.64,50,2025-02-20,2025-08-03
+I0003,Ensenada,Electrónica,Televisores,Proveedor Norte SA,56,25,150,En Tránsito,1034.6,4729.36,88,2025-04-11,2025-07-12
+I0004,Tecate,Electrónica,Televisores,Distribuidora BC,98,43,258,En Tránsito,983.54,2832.23,64,2025-02-27,2025-07-24
+I0005,Rosarito,Electrónica,Televisores,Logística Frontera,127,51,306,En Tránsito,2249.7,7352.97,89,2025-04-12,2025-06-18
+I0006,San Quintín,Electrónica,Televisores,Distribuidora BC,152,41,246,En Tránsito,3050.95,4017.0,14,2025-05-07,2025-06-27
+I0007,Tijuana,Electrónica,Laptops,Comercial Baja,109,56,336,Óptimo,768.45,6108.34,70,2025-04-11,2025-06-20
+I0008,Mexicali,Electrónica,Laptops,Mayoreo TJ,329,68,408,Óptimo,3526.94,6749.76,40,2025-03-15,2025-06-11
+I0009,Ensenada,Electrónica,Laptops,Comercial Baja,397,33,198,Sobrestock,276.26,7386.61,36,2025-05-18,2025-07-06
+I0010,Tecate,Electrónica,Laptops,Surtimax,13,71,426,Bajo,3455.27,3921.15,45,2025-02-28,2025-06-23
+I0011,Rosarito,Electrónica,Laptops,Importaciones Mex,151,27,162,Sobrestock,2122.45,6682.57,5,2025-05-18,2025-07-31
+I0012,San Quintín,Electrónica,Laptops,Mayoreo TJ,17,70,420,Bajo,3632.25,2437.01,78,2025-02-19,2025-07-05
+I0013,Tijuana,Electrónica,Celulares,Proveedor Norte SA,345,26,156,Sobrestock,3459.59,6927.74,60,2025-05-19,2025-07-28
+I0014,Mexicali,Electrónica,Celulares,Comercial Baja,263,56,336,Óptimo,3761.76,5932.78,88,2025-03-24,2025-06-01
+I0015,Ensenada,Electrónica,Celulares,Surtimax,0,37,222,Crítico,3761.78,2472.31,63,2025-04-22,2025-07-06
+I0016,Tecate,Electrónica,Celulares,Importaciones Mex,71,51,306,Óptimo,2346.2,3670.69,21,2025-05-30,2025-07-20
+I0017,Rosarito,Electrónica,Celulares,Surtimax,434,78,468,Sobrestock,1029.56,1229.01,39,2025-03-11,2025-07-30
+I0018,San Quintín,Electrónica,Celulares,Mayoreo TJ,370,80,480,Óptimo,4589.59,3058.69,75,2025-03-16,2025-06-09
+I0019,Tijuana,Electrónica,Tabletas,Importaciones Mex,148,61,366,En Tránsito,2099.21,1347.82,5,2025-02-11,2025-06-12
+I0020,Mexicali,Electrónica,Tabletas,Surtimax,397,29,174,Sobrestock,3600.88,4116.92,30,2025-05-25,2025-07-09
+I0021,Ensenada,Electrónica,Tabletas,Mayoreo TJ,381,79,474,Óptimo,3019.47,7295.02,65,2025-04-18,2025-07-15
+I0022,Tecate,Electrónica,Tabletas,Comercial Baja,120,52,312,En Tránsito,139.69,3516.14,33,2025-02-08,2025-06-09
+I0023,Rosarito,Electrónica,Tabletas,Logística Frontera,105,75,450,Óptimo,2785.57,3172.6,63,2025-04-16,2025-06-16
+I0024,San Quintín,Electrónica,Tabletas,Comercial Baja,219,73,438,Óptimo,1919.82,1063.28,50,2025-02-12,2025-05-31
+I0025,Tijuana,Electrónica,Audífonos,Importaciones Mex,169,66,396,En Tránsito,585.05,7268.45,37,2025-04-30,2025-07-08
+I0026,Mexicali,Electrónica,Audífonos,Logística Frontera,397,51,306,Sobrestock,4933.16,2661.1,88,2025-03-17,2025-06-13
+I0027,Ensenada,Electrónica,Audífonos,Proveedor Norte SA,170,57,342,Óptimo,2063.44,541.94,42,2025-03-29,2025-06-20
+I0028,Tecate,Electrónica,Audífonos,Abastos del Pacífico,236,20,120,Sobrestock,404.87,5274.95,5,2025-02-11,2025-06-12
+I0029,Rosarito,Electrónica,Audífonos,Surtimax,248,71,426,Óptimo,1245.83,1245.38,12,2025-04-04,2025-07-31
+I0030,San Quintín,Electrónica,Audífonos,Proveedor Norte SA,382,36,216,Sobrestock,2803.23,4488.73,39,2025-04-05,2025-07-26
+I0031,Tijuana,Electrónica,Cargadores,Distribuidora BC,186,62,372,Óptimo,3924.42,5771.17,46,2025-05-09,2025-07-07
+I0032,Mexicali,Electrónica,Cargadores,Distribuidora BC,165,80,480,En Tránsito,2122.67,1763.6,31,2025-05-03,2025-06-16
+I0033,Ensenada,Electrónica,Cargadores,Abastos del Pacífico,266,54,324,Óptimo,4225.98,6690.2,0,2025-02-09,2025-07-28
+I0034,Tecate,Electrónica,Cargadores,Abastos del Pacífico,129,74,444,Óptimo,2770.65,1150.18,70,2025-05-02,2025-08-01
+I0035,Rosarito,Electrónica,Cargadores,Comercial Baja,373,42,252,Sobrestock,4640.65,4725.52,69,2025-04-14,2025-07-28
+I0036,San Quintín,Electrónica,Cargadores,Importaciones Mex,421,31,186,Sobrestock,288.36,3546.82,88,2025-03-20,2025-07-30
+I0037,Tijuana,Electrónica,Cables,Abastos del Pacífico,424,55,330,Sobrestock,4138.29,807.36,40,2025-05-25,2025-07-02
+I0038,Mexicali,Electrónica,Cables,Importaciones Mex,51,67,402,Bajo,4183.29,353.9,79,2025-03-02,2025-06-20
+I0039,Ensenada,Electrónica,Cables,Logística Frontera,84,21,126,Óptimo,2027.12,230.85,83,2025-03-30,2025-08-01
+I0040,Tecate,Electrónica,Cables,Importaciones Mex,88,59,354,En Tránsito,2101.2,734.1,80,2025-03-15,2025-06-10
+I0041,Rosarito,Electrónica,Cables,Mayoreo TJ,370,75,450,Óptimo,4290.56,5629.54,89,2025-02-26,2025-07-21
+I0042,San Quintín,Electrónica,Cables,Proveedor Norte SA,103,66,396,En Tránsito,907.91,2537.42,76,2025-05-26,2025-06-19
+I0043,Tijuana,Electrónica,Cámaras,Proveedor Norte SA,426,76,456,Sobrestock,1177.63,2811.11,80,2025-05-28,2025-06-20
+I0044,Mexicali,Electrónica,Cámaras,Surtimax,86,67,402,Óptimo,3222.46,4237.96,89,2025-05-15,2025-07-26
+I0045,Ensenada,Electrónica,Cámaras,Mayoreo TJ,236,31,186,Sobrestock,1744.4,4278.09,54,2025-03-05,2025-07-23
+I0046,Tecate,Electrónica,Cámaras,Mayoreo TJ,271,26,156,Sobrestock,1135.99,2643.57,28,2025-02-23,2025-07-11
+I0047,Rosarito,Electrónica,Cámaras,Proveedor Norte SA,70,47,282,Óptimo,370.33,764.01,81,2025-02-17,2025-06-23
+I0048,San Quintín,Electrónica,Cámaras,Importaciones Mex,469,77,462,Sobrestock,4589.17,3872.48,67,2025-04-12,2025-06-07
+I0049,Tijuana,Ropa,Camisas,Distribuidora BC,478,72,432,Sobrestock,3159.39,1381.68,17,2025-03-09,2025-06-25
+I0050,Mexicali,Ropa,Camisas,Abastos del Pacífico,382,69,414,Sobrestock,1770.34,1073.47,12,2025-02-11,2025-06-09
+I0051,Ensenada,Ropa,Camisas,Logística Frontera,16,48,288,Bajo,1682.94,7268.82,6,2025-05-07,2025-07-14
+I0052,Tecate,Ropa,Camisas,Proveedor Norte SA,360,23,138,Sobrestock,2957.75,4638.4,8,2025-04-22,2025-07-29
+I0053,Rosarito,Ropa,Camisas,Proveedor Norte SA,59,40,240,En Tránsito,2567.92,3009.53,15,2025-02-14,2025-06-08
+I0054,San Quintín,Ropa,Camisas,Surtimax,428,76,456,Sobrestock,145.55,5619.08,13,2025-02-25,2025-06-20
+I0055,Tijuana,Ropa,Pantalones,Surtimax,371,74,444,Sobrestock,326.2,661.94,21,2025-05-30,2025-08-03
+I0056,Mexicali,Ropa,Pantalones,Proveedor Norte SA,233,69,414,Óptimo,4943.1,1502.74,59,2025-05-17,2025-06-05
+I0057,Ensenada,Ropa,Pantalones,Comercial Baja,99,56,336,Óptimo,1254.03,125.73,78,2025-04-20,2025-06-12
+I0058,Tecate,Ropa,Pantalones,Comercial Baja,145,58,348,Óptimo,4558.47,7779.11,76,2025-02-15,2025-06-04
+I0059,Rosarito,Ropa,Pantalones,Logística Frontera,141,43,258,Óptimo,637.66,3088.62,68,2025-04-09,2025-06-15
+I0060,San Quintín,Ropa,Pantalones,Surtimax,403,51,306,Sobrestock,3766.7,569.86,72,2025-03-20,2025-06-29
+I0061,Tijuana,Ropa,Vestidos,Importaciones Mex,406,38,228,Sobrestock,1716.38,4793.41,20,2025-04-04,2025-07-12
+I0062,Mexicali,Ropa,Vestidos,Abastos del Pacífico,448,34,204,Sobrestock,3732.87,2451.34,60,2025-04-23,2025-06-07
+I0063,Ensenada,Ropa,Vestidos,Importaciones Mex,181,31,186,Sobrestock,3423.48,7533.96,84,2025-05-07,2025-07-09
+I0064,Tecate,Ropa,Vestidos,Proveedor Norte SA,243,41,246,Sobrestock,4031.25,6084.09,73,2025-05-23,2025-06-08
+I0065,Rosarito,Ropa,Vestidos,Importaciones Mex,457,50,300,Sobrestock,1799.57,3408.41,82,2025-03-24,2025-07-04
+I0066,San Quintín,Ropa,Vestidos,Surtimax,431,22,132,Sobrestock,2651.44,2684.85,70,2025-02-13,2025-06-12
+I0067,Tijuana,Ropa,Zapatos,Surtimax,279,43,258,Sobrestock,2267.53,733.82,2,2025-04-01,2025-07-27
+I0068,Mexicali,Ropa,Zapatos,Abastos del Pacífico,184,50,300,Óptimo,4549.69,7892.21,59,2025-02-13,2025-06-07
+I0069,Ensenada,Ropa,Zapatos,Abastos del Pacífico,435,71,426,Sobrestock,543.96,327.76,22,2025-05-14,2025-06-04
+I0070,Tecate,Ropa,Zapatos,Comercial Baja,127,21,126,Sobrestock,1057.57,5650.53,44,2025-03-05,2025-07-19
+I0071,Rosarito,Ropa,Zapatos,Distribuidora BC,270,29,174,Sobrestock,1629.74,6646.72,59,2025-04-13,2025-06-02
+I0072,San Quintín,Ropa,Zapatos,Comercial Baja,4,66,396,Bajo,4657.36,5235.48,71,2025-03-25,2025-06-14
+I0073,Tijuana,Ropa,Chamarras,Abastos del Pacífico,470,76,456,Sobrestock,3036.54,553.05,66,2025-03-16,2025-07-01
+I0074,Mexicali,Ropa,Chamarras,Surtimax,133,65,390,Óptimo,1593.94,5986.91,38,2025-04-12,2025-06-12
+I0075,Ensenada,Ropa,Chamarras,Importaciones Mex,132,39,234,Óptimo,3820.69,2141.53,52,2025-05-10,2025-06-21
+I0076,Tecate,Ropa,Chamarras,Abastos del Pacífico,204,45,270,Óptimo,3863.87,4799.14,44,2025-02-16,2025-06-13
+I0077,Rosarito,Ropa,Chamarras,Importaciones Mex,365,72,432,Sobrestock,2685.28,7391.76,24,2025-03-11,2025-07-08
+I0078,San Quintín,Ropa,Chamarras,Surtimax,486,25,150,Sobrestock,4582.48,7220.06,73,2025-05-09,2025-06-20
+I0079,Tijuana,Ropa,Ropa Interior,Comercial Baja,236,49,294,Óptimo,472.39,2993.91,79,2025-04-22,2025-07-22
+I0080,Mexicali,Ropa,Ropa Interior,Abastos del Pacífico,60,78,468,Bajo,145.94,702.29,13,2025-02-18,2025-07-01
+I0081,Ensenada,Ropa,Ropa Interior,Comercial Baja,420,78,468,Sobrestock,2522.74,595.94,69,2025-04-05,2025-07-29
+I0082,Tecate,Ropa,Ropa Interior,Mayoreo TJ,340,65,390,Sobrestock,2870.97,1977.25,73,2025-02-11,2025-07-27
+I0083,Rosarito,Ropa,Ropa Interior,Mayoreo TJ,487,50,300,Sobrestock,4101.3,4460.5,6,2025-05-19,2025-06-06
+I0084,San Quintín,Ropa,Ropa Interior,Proveedor Norte SA,310,61,366,Sobrestock,4285.26,7557.01,81,2025-03-18,2025-06-03
+I0085,Tijuana,Ropa,Calcetines,Abastos del Pacífico,299,69,414,Óptimo,3532.8,5353.22,0,2025-03-18,2025-05-31
+I0086,Mexicali,Ropa,Calcetines,Proveedor Norte SA,213,53,318,En Tránsito,4683.0,7191.31,46,2025-05-09,2025-07-17
+I0087,Ensenada,Ropa,Calcetines,Comercial Baja,375,30,180,Sobrestock,1012.12,5127.37,33,2025-02-07,2025-07-26
+I0088,Tecate,Ropa,Calcetines,Logística Frontera,337,20,120,Sobrestock,4421.27,4677.14,22,2025-03-10,2025-06-15
+I0089,Rosarito,Ropa,Calcetines,Comercial Baja,210,63,378,Óptimo,2255.51,1145.27,63,2025-04-17,2025-07-26
+I0090,San Quintín,Ropa,Calcetines,Proveedor Norte SA,389,34,204,Sobrestock,2854.03,178.23,28,2025-05-18,2025-06-24
+I0091,Tijuana,Ropa,Gorras,Distribuidora BC,389,23,138,Sobrestock,3385.82,1331.96,15,2025-05-23,2025-07-24
+I0092,Mexicali,Ropa,Gorras,Logística Frontera,144,48,288,Óptimo,2655.32,5942.38,40,2025-02-09,2025-06-21
+I0093,Ensenada,Ropa,Gorras,Comercial Baja,104,25,150,Óptimo,4852.09,6049.46,37,2025-05-05,2025-07-04
+I0094,Tecate,Ropa,Gorras,Distribuidora BC,429,51,306,Sobrestock,4279.62,7308.55,45,2025-02-10,2025-06-27
+I0095,Rosarito,Ropa,Gorras,Distribuidora BC,420,50,300,Sobrestock,1637.65,5909.62,3,2025-02-05,2025-07-31
+I0096,San Quintín,Ropa,Gorras,Importaciones Mex,131,55,330,En Tránsito,4458.73,1242.77,68,2025-02-22,2025-06-07
+I0097,Tijuana,Alimentos,Snacks,Mayoreo TJ,41,29,174,Óptimo,3595.86,6322.55,13,2025-03-16,2025-06-18
+I0098,Mexicali,Alimentos,Snacks,Proveedor Norte SA,207,79,474,Óptimo,2434.31,7386.03,54,2025-05-02,2025-07-30
+I0099,Ensenada,Alimentos,Snacks,Comercial Baja,293,43,258,Sobrestock,1585.79,3731.85,64,2025-03-31,2025-07-27
+I0100,Tecate,Alimentos,Snacks,Proveedor Norte SA,72,43,258,Óptimo,2198.04,4786.64,31,2025-03-30,2025-07-13
+I0101,Rosarito,Alimentos,Snacks,Comercial Baja,480,70,420,Sobrestock,4019.47,5168.18,74,2025-03-09,2025-06-18
+I0102,San Quintín,Alimentos,Snacks,Importaciones Mex,436,76,456,Sobrestock,623.64,2812.36,14,2025-02-05,2025-06-10
+I0103,Tijuana,Alimentos,Bebidas,Importaciones Mex,412,51,306,Sobrestock,419.3,1871.2,58,2025-02-13,2025-06-07
+I0104,Mexicali,Alimentos,Bebidas,Abastos del Pacífico,302,64,384,Óptimo,2143.7,936.98,52,2025-03-22,2025-08-03
+I0105,Ensenada,Alimentos,Bebidas,Distribuidora BC,500,52,312,Sobrestock,2643.34,4109.99,30,2025-05-17,2025-07-29
+I0106,Tecate,Alimentos,Bebidas,Proveedor Norte SA,427,44,264,Sobrestock,2122.14,5221.56,57,2025-02-13,2025-06-16
+I0107,Rosarito,Alimentos,Bebidas,Surtimax,487,42,252,Sobrestock,3453.89,7142.91,44,2025-04-14,2025-07-03
+I0108,San Quintín,Alimentos,Bebidas,Distribuidora BC,293,32,192,Sobrestock,4019.85,3860.58,68,2025-02-24,2025-07-23
+I0109,Tijuana,Alimentos,Lácteos,Importaciones Mex,136,80,480,Óptimo,1370.5,5311.97,39,2025-03-02,2025-07-05
+I0110,Mexicali,Alimentos,Lácteos,Surtimax,31,31,186,En Tránsito,3448.35,6815.64,75,2025-04-21,2025-06-10
+I0111,Ensenada,Alimentos,Lácteos,Comercial Baja,28,52,312,Bajo,2279.13,3938.79,55,2025-03-24,2025-07-01
+I0112,Tecate,Alimentos,Lácteos,Proveedor Norte SA,160,51,306,En Tránsito,4218.36,6635.43,64,2025-02-12,2025-07-24
+I0113,Rosarito,Alimentos,Lácteos,Importaciones Mex,389,53,318,Sobrestock,832.76,135.75,26,2025-04-15,2025-07-20
+I0114,San Quintín,Alimentos,Lácteos,Importaciones Mex,168,76,456,Óptimo,2241.25,898.04,16,2025-03-26,2025-06-22
+I0115,Tijuana,Alimentos,Carnes Frías,Mayoreo TJ,268,58,348,Óptimo,693.09,4602.43,56,2025-03-28,2025-06-11
+I0116,Mexicali,Alimentos,Carnes Frías,Importaciones Mex,488,59,354,Sobrestock,1572.16,4307.51,60,2025-04-27,2025-07-18
+I0117,Ensenada,Alimentos,Carnes Frías,Importaciones Mex,22,26,156,Bajo,536.24,5726.29,68,2025-03-30,2025-06-16
+I0118,Tecate,Alimentos,Carnes Frías,Distribuidora BC,133,43,258,Óptimo,4593.33,7316.96,63,2025-02-17,2025-06-17
+I0119,Rosarito,Alimentos,Carnes Frías,Surtimax,395,44,264,Sobrestock,698.23,6938.61,14,2025-05-03,2025-06-01
+I0120,San Quintín,Alimentos,Carnes Frías,Abastos del Pacífico,206,53,318,Óptimo,2133.11,6937.28,55,2025-03-21,2025-07-23
+I0121,Tijuana,Alimentos,Panadería,Proveedor Norte SA,187,54,324,Óptimo,1438.81,5112.51,74,2025-02-14,2025-06-07
+I0122,Mexicali,Alimentos,Panadería,Logística Frontera,110,72,432,Óptimo,2928.01,3642.81,54,2025-03-14,2025-07-16
+I0123,Ensenada,Alimentos,Panadería,Mayoreo TJ,212,51,306,Óptimo,4122.35,5639.97,38,2025-04-22,2025-07-27
+I0124,Tecate,Alimentos,Panadería,Distribuidora BC,221,60,360,Óptimo,1627.87,3825.12,85,2025-02-21,2025-06-15
+I0125,Rosarito,Alimentos,Panadería,Distribuidora BC,347,35,210,Sobrestock,3486.53,4991.74,31,2025-04-19,2025-07-18
+I0126,San Quintín,Alimentos,Panadería,Proveedor Norte SA,269,78,468,Óptimo,869.04,6406.58,20,2025-04-18,2025-07-27
+I0127,Tijuana,Alimentos,Conservas,Mayoreo TJ,221,51,306,En Tránsito,918.18,189.86,10,2025-05-13,2025-06-09
+I0128,Mexicali,Alimentos,Conservas,Proveedor Norte SA,110,80,480,Óptimo,4073.11,5711.58,24,2025-03-28,2025-07-22
+I0129,Ensenada,Alimentos,Conservas,Logística Frontera,265,68,408,En Tránsito,4101.17,2346.87,18,2025-04-08,2025-06-26
+I0130,Tecate,Alimentos,Conservas,Logística Frontera,218,50,300,Óptimo,1502.98,1548.99,37,2025-03-18,2025-07-27
+I0131,Rosarito,Alimentos,Conservas,Surtimax,58,80,480,Bajo,4762.59,2962.81,72,2025-05-12,2025-07-25
+I0132,San Quintín,Alimentos,Conservas,Comercial Baja,276,36,216,Sobrestock,811.9,3685.54,51,2025-02-09,2025-07-03
+I0133,Tijuana,Alimentos,Cereales,Mayoreo TJ,35,78,468,Bajo,4501.47,796.59,63,2025-02-18,2025-08-01
+I0134,Mexicali,Alimentos,Cereales,Logística Frontera,46,44,264,En Tránsito,1380.29,1531.13,71,2025-02-28,2025-07-18
+I0135,Ensenada,Alimentos,Cereales,Logística Frontera,109,80,480,Óptimo,2480.36,7229.86,39,2025-02-25,2025-07-17
+I0136,Tecate,Alimentos,Cereales,Logística Frontera,495,40,240,Sobrestock,4956.45,3787.1,14,2025-02-25,2025-06-06
+I0137,Rosarito,Alimentos,Cereales,Importaciones Mex,18,48,288,Bajo,4897.64,760.22,71,2025-02-09,2025-06-05
+I0138,San Quintín,Alimentos,Cereales,Mayoreo TJ,194,70,420,En Tránsito,1371.71,2007.2,81,2025-04-21,2025-07-30
+I0139,Tijuana,Alimentos,Condimentos,Abastos del Pacífico,326,48,288,Sobrestock,3476.6,7743.21,25,2025-02-20,2025-06-28
+I0140,Mexicali,Alimentos,Condimentos,Comercial Baja,295,26,156,Sobrestock,3515.24,2763.97,73,2025-02-10,2025-07-16
+I0141,Ensenada,Alimentos,Condimentos,Distribuidora BC,257,53,318,Óptimo,2931.35,5203.16,39,2025-04-10,2025-06-23
+I0142,Tecate,Alimentos,Condimentos,Distribuidora BC,141,46,276,Óptimo,361.7,4260.19,0,2025-05-22,2025-06-29
+I0143,Rosarito,Alimentos,Condimentos,Abastos del Pacífico,371,37,222,Sobrestock,2275.59,5635.29,54,2025-02-17,2025-07-24
+I0144,San Quintín,Alimentos,Condimentos,Logística Frontera,308,33,198,Sobrestock,2467.34,4118.77,3,2025-05-12,2025-07-20
+I0145,Tijuana,Hogar,Muebles,Comercial Baja,125,51,306,Óptimo,865.28,4522.8,4,2025-04-16,2025-06-16
+I0146,Mexicali,Hogar,Muebles,Abastos del Pacífico,70,45,270,Óptimo,1263.38,425.39,36,2025-03-25,2025-07-06
+I0147,Ensenada,Hogar,Muebles,Surtimax,313,52,312,Sobrestock,4951.19,4941.62,14,2025-04-05,2025-07-14
+I0148,Tecate,Hogar,Muebles,Logística Frontera,498,30,180,Sobrestock,334.31,7869.49,9,2025-04-03,2025-07-16
+I0149,Rosarito,Hogar,Muebles,Logística Frontera,185,21,126,Sobrestock,2972.56,1950.92,57,2025-04-15,2025-06-14
+I0150,San Quintín,Hogar,Muebles,Mayoreo TJ,147,25,150,Sobrestock,4786.49,7539.54,3,2025-02-13,2025-07-16
+I0151,Tijuana,Hogar,Lámparas,Comercial Baja,122,32,192,En Tránsito,2999.45,1133.17,68,2025-03-06,2025-06-21
+I0152,Mexicali,Hogar,Lámparas,Mayoreo TJ,304,27,162,Sobrestock,4123.07,4047.6,15,2025-05-08,2025-06-10
+I0153,Ensenada,Hogar,Lámparas,Comercial Baja,335,55,330,Sobrestock,1411.53,5242.58,5,2025-02-11,2025-08-02
+I0154,Tecate,Hogar,Lámparas,Abastos del Pacífico,129,34,204,Óptimo,847.73,7222.47,80,2025-03-08,2025-06-27
+I0155,Rosarito,Hogar,Lámparas,Comercial Baja,85,34,204,En Tránsito,1940.71,7659.72,80,2025-05-23,2025-06-27
+I0156,San Quintín,Hogar,Lámparas,Mayoreo TJ,163,44,264,Óptimo,2976.34,2231.1,18,2025-03-12,2025-07-31
+I0157,Tijuana,Hogar,Cobijas,Mayoreo TJ,88,74,444,Óptimo,4516.95,2335.28,61,2025-02-23,2025-08-03
+I0158,Mexicali,Hogar,Cobijas,Importaciones Mex,442,35,210,Sobrestock,1119.86,5988.21,20,2025-04-25,2025-07-18
+I0159,Ensenada,Hogar,Cobijas,Importaciones Mex,22,69,414,Bajo,925.71,1250.6,57,2025-03-18,2025-07-18
+I0160,Tecate,Hogar,Cobijas,Surtimax,51,51,306,En Tránsito,2652.52,2483.32,34,2025-04-30,2025-06-09
+I0161,Rosarito,Hogar,Cobijas,Importaciones Mex,419,49,294,Sobrestock,155.88,6513.19,64,2025-05-17,2025-06-10
+I0162,San Quintín,Hogar,Cobijas,Distribuidora BC,374,70,420,Sobrestock,3600.09,4619.99,18,2025-03-12,2025-06-18
+I0163,Tijuana,Hogar,Cojines,Mayoreo TJ,143,27,162,Sobrestock,3009.81,7850.52,45,2025-05-18,2025-08-02
+I0164,Mexicali,Hogar,Cojines,Mayoreo TJ,189,30,180,Sobrestock,2578.38,4095.76,19,2025-02-07,2025-06-28
+I0165,Ensenada,Hogar,Cojines,Logística Frontera,301,51,306,Sobrestock,3100.56,346.52,3,2025-05-20,2025-06-22
+I0166,Tecate,Hogar,Cojines,Abastos del Pacífico,312,34,204,Sobrestock,2230.24,4296.81,10,2025-03-11,2025-07-14
+I0167,Rosarito,Hogar,Cojines,Logística Frontera,175,37,222,En Tránsito,1442.04,5881.39,18,2025-05-15,2025-07-29
+I0168,San Quintín,Hogar,Cojines,Comercial Baja,471,34,204,Sobrestock,759.73,4523.5,20,2025-05-16,2025-06-29
+I0169,Tijuana,Hogar,Utensilios,Importaciones Mex,104,71,426,Óptimo,1037.95,5406.93,47,2025-05-03,2025-07-27
+I0170,Mexicali,Hogar,Utensilios,Importaciones Mex,326,60,360,Sobrestock,2478.14,2761.78,29,2025-04-21,2025-06-25
+I0171,Ensenada,Hogar,Utensilios,Distribuidora BC,500,77,462,Sobrestock,562.33,7273.84,49,2025-03-18,2025-06-27
+I0172,Tecate,Hogar,Utensilios,Logística Frontera,58,29,174,Óptimo,1751.34,3086.96,78,2025-03-24,2025-07-26
+I0173,Rosarito,Hogar,Utensilios,Comercial Baja,466,42,252,Sobrestock,203.56,3852.83,61,2025-02-15,2025-07-16
+I0174,San Quintín,Hogar,Utensilios,Distribuidora BC,318,61,366,Sobrestock,3271.56,1831.43,29,2025-05-16,2025-06-28
+I0175,Tijuana,Hogar,Decoración,Mayoreo TJ,118,43,258,Óptimo,3869.0,5248.0,47,2025-03-19,2025-06-02
+I0176,Mexicali,Hogar,Decoración,Logística Frontera,62,33,198,Óptimo,592.82,6211.27,90,2025-05-08,2025-07-01
+I0177,Ensenada,Hogar,Decoración,Distribuidora BC,373,36,216,Sobrestock,417.86,1910.13,24,2025-05-20,2025-06-17
+I0178,Tecate,Hogar,Decoración,Mayoreo TJ,12,79,474,Bajo,687.52,719.19,58,2025-03-05,2025-06-22
+I0179,Rosarito,Hogar,Decoración,Abastos del Pacífico,435,28,168,Sobrestock,3880.06,372.12,50,2025-04-13,2025-07-20
+I0180,San Quintín,Hogar,Decoración,Abastos del Pacífico,322,75,450,En Tránsito,2123.37,65.82,61,2025-02-06,2025-07-22
+I0181,Tijuana,Hogar,Almohadas,Abastos del Pacífico,413,38,228,Sobrestock,4017.93,7383.62,78,2025-04-10,2025-07-27
+I0182,Mexicali,Hogar,Almohadas,Distribuidora BC,160,47,282,En Tránsito,2893.55,5022.39,42,2025-04-18,2025-06-10
+I0183,Ensenada,Hogar,Almohadas,Logística Frontera,44,21,126,Óptimo,2921.81,1708.27,24,2025-03-16,2025-06-01
+I0184,Tecate,Hogar,Almohadas,Importaciones Mex,417,56,336,Sobrestock,757.55,3579.55,24,2025-02-20,2025-07-19
+I0185,Rosarito,Hogar,Almohadas,Abastos del Pacífico,310,38,228,Sobrestock,979.85,5516.79,16,2025-02-11,2025-06-10
+I0186,San Quintín,Hogar,Almohadas,Proveedor Norte SA,432,35,210,Sobrestock,4242.14,6704.9,25,2025-03-01,2025-06-21
+I0187,Tijuana,Hogar,Cortinas,Abastos del Pacífico,121,58,348,En Tránsito,4570.32,7731.91,9,2025-05-20,2025-06-12
+I0188,Mexicali,Hogar,Cortinas,Abastos del Pacífico,338,55,330,Sobrestock,1919.41,7079.28,14,2025-02-13,2025-07-13
+I0189,Ensenada,Hogar,Cortinas,Abastos del Pacífico,47,67,402,Bajo,1488.34,5631.29,85,2025-05-20,2025-07-02
+I0190,Tecate,Hogar,Cortinas,Surtimax,473,46,276,Sobrestock,3037.17,1229.09,79,2025-03-29,2025-07-17
+I0191,Rosarito,Hogar,Cortinas,Comercial Baja,474,79,474,Sobrestock,2820.43,3494.28,2,2025-02-10,2025-06-01
+I0192,San Quintín,Hogar,Cortinas,Comercial Baja,1,38,228,Bajo,45.44,1547.37,53,2025-02-09,2025-06-01
+I0193,Tijuana,Ferretería,Herramientas,Logística Frontera,423,53,318,Sobrestock,4298.37,5301.18,72,2025-02-14,2025-06-25
+I0194,Mexicali,Ferretería,Herramientas,Comercial Baja,355,37,222,Sobrestock,1248.5,7055.34,2,2025-03-22,2025-06-27
+I0195,Ensenada,Ferretería,Herramientas,Importaciones Mex,287,53,318,Sobrestock,531.19,1338.17,90,2025-02-05,2025-07-09
+I0196,Tecate,Ferretería,Herramientas,Logística Frontera,447,76,456,Sobrestock,831.63,7025.08,18,2025-03-06,2025-07-23
+I0197,Rosarito,Ferretería,Herramientas,Distribuidora BC,63,47,282,Óptimo,133.68,7757.3,62,2025-02-22,2025-06-26
+I0198,San Quintín,Ferretería,Herramientas,Mayoreo TJ,364,54,324,Sobrestock,370.8,6778.9,81,2025-02-16,2025-06-05
+I0199,Tijuana,Ferretería,Pinturas,Proveedor Norte SA,49,43,258,Óptimo,4576.45,7782.36,76,2025-04-07,2025-07-08
+I0200,Mexicali,Ferretería,Pinturas,Proveedor Norte SA,288,50,300,Sobrestock,1429.09,5412.32,19,2025-05-04,2025-06-04
+I0201,Ensenada,Ferretería,Pinturas,Comercial Baja,297,48,288,Sobrestock,4172.36,3278.67,54,2025-04-30,2025-06-30
+I0202,Tecate,Ferretería,Pinturas,Logística Frontera,52,22,132,Óptimo,1690.35,669.18,90,2025-04-25,2025-07-05
+I0203,Rosarito,Ferretería,Pinturas,Abastos del Pacífico,71,28,168,Óptimo,1655.34,6478.76,21,2025-04-05,2025-06-10
+I0204,San Quintín,Ferretería,Pinturas,Mayoreo TJ,132,76,456,Óptimo,3229.08,2807.9,61,2025-03-24,2025-06-19
+I0205,Tijuana,Ferretería,Tornillería,Comercial Baja,100,34,204,Óptimo,4553.41,3017.15,74,2025-04-29,2025-07-04
+I0206,Mexicali,Ferretería,Tornillería,Logística Frontera,464,39,234,Sobrestock,2587.52,720.38,85,2025-03-12,2025-06-27
+I0207,Ensenada,Ferretería,Tornillería,Distribuidora BC,212,20,120,Sobrestock,2009.23,3523.9,65,2025-04-05,2025-07-19
+I0208,Tecate,Ferretería,Tornillería,Comercial Baja,114,67,402,Óptimo,1024.5,1351.31,84,2025-03-16,2025-07-31
+I0209,Rosarito,Ferretería,Tornillería,Importaciones Mex,190,54,324,Óptimo,2032.18,4821.77,56,2025-05-20,2025-06-04
+I0210,San Quintín,Ferretería,Tornillería,Importaciones Mex,52,72,432,Bajo,3944.94,4940.03,69,2025-02-17,2025-05-31
+I0211,Tijuana,Ferretería,Plomería,Comercial Baja,73,56,336,Óptimo,2789.28,1064.48,86,2025-03-02,2025-06-29
+I0212,Mexicali,Ferretería,Plomería,Abastos del Pacífico,346,74,444,Óptimo,707.31,2232.12,18,2025-04-29,2025-06-16
+I0213,Ensenada,Ferretería,Plomería,Mayoreo TJ,116,72,432,Óptimo,746.51,2458.71,2,2025-02-19,2025-07-03
+I0214,Tecate,Ferretería,Plomería,Mayoreo TJ,325,37,222,Sobrestock,985.75,102.73,48,2025-05-20,2025-07-19
+I0215,Rosarito,Ferretería,Plomería,Comercial Baja,401,41,246,Sobrestock,2276.41,159.75,51,2025-02-17,2025-06-19
+I0216,San Quintín,Ferretería,Plomería,Comercial Baja,182,27,162,Sobrestock,1312.67,2456.24,15,2025-02-07,2025-07-09
+I0217,Tijuana,Ferretería,Electricidad,Importaciones Mex,120,59,354,En Tránsito,3499.45,4562.83,31,2025-05-05,2025-06-12
+I0218,Mexicali,Ferretería,Electricidad,Logística Frontera,222,58,348,Óptimo,1967.22,7578.0,1,2025-05-13,2025-06-19
+I0219,Ensenada,Ferretería,Electricidad,Abastos del Pacífico,422,73,438,Sobrestock,3334.54,5866.38,60,2025-03-13,2025-07-14
+I0220,Tecate,Ferretería,Electricidad,Distribuidora BC,56,60,360,Bajo,2243.67,7073.08,84,2025-05-06,2025-07-24
+I0221,Rosarito,Ferretería,Electricidad,Comercial Baja,58,29,174,Óptimo,4784.88,6392.74,48,2025-04-27,2025-07-11
+I0222,San Quintín,Ferretería,Electricidad,Comercial Baja,402,64,384,Sobrestock,1908.91,2458.76,54,2025-04-17,2025-06-20
+I0223,Tijuana,Ferretería,Adhesivos,Surtimax,470,47,282,Sobrestock,3002.21,7138.33,5,2025-02-27,2025-06-20
+I0224,Mexicali,Ferretería,Adhesivos,Logística Frontera,242,73,438,Óptimo,2070.63,7803.18,35,2025-05-06,2025-06-23
+I0225,Ensenada,Ferretería,Adhesivos,Surtimax,170,65,390,Óptimo,2355.03,1991.16,37,2025-05-18,2025-07-27
+I0226,Tecate,Ferretería,Adhesivos,Mayoreo TJ,342,55,330,Sobrestock,232.96,926.14,62,2025-04-29,2025-07-19
+I0227,Rosarito,Ferretería,Adhesivos,Surtimax,261,35,210,Sobrestock,4631.4,6915.51,86,2025-04-11,2025-06-09
+I0228,San Quintín,Ferretería,Adhesivos,Logística Frontera,120,51,306,Óptimo,889.13,6037.88,36,2025-03-29,2025-07-16
+I0229,Tijuana,Ferretería,Selladores,Mayoreo TJ,116,76,456,Óptimo,360.51,3970.47,7,2025-03-19,2025-07-30
+I0230,Mexicali,Ferretería,Selladores,Comercial Baja,68,44,264,Óptimo,2874.51,1591.62,5,2025-05-18,2025-06-06
+I0231,Ensenada,Ferretería,Selladores,Proveedor Norte SA,74,66,396,En Tránsito,985.8,2191.64,25,2025-02-10,2025-08-01
+I0232,Tecate,Ferretería,Selladores,Proveedor Norte SA,237,56,336,Óptimo,3194.61,1093.57,11,2025-05-22,2025-07-16
+I0233,Rosarito,Ferretería,Selladores,Mayoreo TJ,451,32,192,Sobrestock,1253.25,4373.58,7,2025-05-24,2025-07-13
+I0234,San Quintín,Ferretería,Selladores,Abastos del Pacífico,189,41,246,Óptimo,4173.77,3915.12,71,2025-02-19,2025-06-06
+I0235,Tijuana,Ferretería,Brochas,Distribuidora BC,196,32,192,Sobrestock,2991.18,2968.18,35,2025-05-10,2025-06-06
+I0236,Mexicali,Ferretería,Brochas,Comercial Baja,221,44,264,Sobrestock,4465.45,3088.17,90,2025-03-31,2025-06-17
+I0237,Ensenada,Ferretería,Brochas,Proveedor Norte SA,325,59,354,Sobrestock,3336.23,7810.92,53,2025-03-17,2025-06-08
+I0238,Tecate,Ferretería,Brochas,Mayoreo TJ,204,42,252,Óptimo,4978.65,2594.57,32,2025-04-05,2025-06-25
+I0239,Rosarito,Ferretería,Brochas,Logística Frontera,247,22,132,Sobrestock,846.49,5222.99,38,2025-02-19,2025-07-16
+I0240,San Quintín,Ferretería,Brochas,Comercial Baja,73,35,210,En Tránsito,2209.38,6423.61,67,2025-04-08,2025-06-07
+I0241,Tijuana,Farmacia,Medicamentos,Proveedor Norte SA,392,21,126,Sobrestock,2850.43,2768.33,44,2025-02-11,2025-07-22
+I0242,Mexicali,Farmacia,Medicamentos,Importaciones Mex,326,58,348,Sobrestock,4034.18,5026.43,51,2025-03-06,2025-06-26
+I0243,Ensenada,Farmacia,Medicamentos,Distribuidora BC,263,75,450,En Tránsito,955.36,7106.38,38,2025-04-27,2025-06-24
+I0244,Tecate,Farmacia,Medicamentos,Importaciones Mex,496,80,480,Sobrestock,2167.93,7712.35,19,2025-02-04,2025-06-26
+I0245,Rosarito,Farmacia,Medicamentos,Proveedor Norte SA,252,46,276,Sobrestock,673.34,6435.5,80,2025-04-08,2025-06-04
+I0246,San Quintín,Farmacia,Medicamentos,Comercial Baja,228,35,210,Sobrestock,1209.47,3201.11,68,2025-02-09,2025-06-30
+I0247,Tijuana,Farmacia,Vitaminas,Comercial Baja,46,47,282,Bajo,2193.94,3623.79,77,2025-02-05,2025-07-04
+I0248,Mexicali,Farmacia,Vitaminas,Abastos del Pacífico,459,44,264,Sobrestock,138.38,2732.95,75,2025-05-12,2025-06-30
+I0249,Ensenada,Farmacia,Vitaminas,Logística Frontera,378,24,144,Sobrestock,2881.2,1554.02,35,2025-03-10,2025-06-08
+I0250,Tecate,Farmacia,Vitaminas,Abastos del Pacífico,334,61,366,Sobrestock,454.54,4963.54,23,2025-05-16,2025-07-26
+I0251,Rosarito,Farmacia,Vitaminas,Mayoreo TJ,312,64,384,En Tránsito,2100.05,1432.47,41,2025-03-19,2025-07-12
+I0252,San Quintín,Farmacia,Vitaminas,Distribuidora BC,228,76,456,Óptimo,3111.25,2131.36,44,2025-04-26,2025-06-05
+I0253,Tijuana,Farmacia,Higiene,Proveedor Norte SA,266,60,360,En Tránsito,2186.3,258.78,53,2025-03-05,2025-07-04
+I0254,Mexicali,Farmacia,Higiene,Distribuidora BC,6,57,342,Bajo,3556.39,3082.64,10,2025-03-29,2025-06-27
+I0255,Ensenada,Farmacia,Higiene,Importaciones Mex,63,35,210,Óptimo,1907.13,2374.37,22,2025-04-13,2025-06-03
+I0256,Tecate,Farmacia,Higiene,Importaciones Mex,137,62,372,Óptimo,914.22,6092.13,32,2025-03-11,2025-07-04
+I0257,Rosarito,Farmacia,Higiene,Distribuidora BC,417,43,258,Sobrestock,2043.99,4705.52,34,2025-03-29,2025-06-12
+I0258,San Quintín,Farmacia,Higiene,Mayoreo TJ,404,41,246,Sobrestock,3188.52,3316.26,14,2025-03-17,2025-06-13
+I0259,Tijuana,Farmacia,Cuidado Personal,Logística Frontera,185,46,276,Óptimo,3268.26,204.63,62,2025-05-03,2025-07-02
+I0260,Mexicali,Farmacia,Cuidado Personal,Comercial Baja,292,26,156,Sobrestock,3279.51,7088.14,88,2025-02-07,2025-07-24
+I0261,Ensenada,Farmacia,Cuidado Personal,Distribuidora BC,8,62,372,Bajo,721.68,3550.82,7,2025-03-26,2025-06-03
+I0262,Tecate,Farmacia,Cuidado Personal,Mayoreo TJ,79,64,384,En Tránsito,4755.46,2168.41,70,2025-04-19,2025-07-26
+I0263,Rosarito,Farmacia,Cuidado Personal,Comercial Baja,34,39,234,Bajo,285.58,3313.34,44,2025-04-22,2025-07-20
+I0264,San Quintín,Farmacia,Cuidado Personal,Proveedor Norte SA,417,41,246,Sobrestock,4899.19,6457.87,86,2025-04-29,2025-06-02
+I0265,Tijuana,Farmacia,Primeros Auxilios,Comercial Baja,93,73,438,Óptimo,3113.95,7350.9,88,2025-03-29,2025-07-08
+I0266,Mexicali,Farmacia,Primeros Auxilios,Comercial Baja,407,61,366,Sobrestock,64.8,2523.63,71,2025-03-28,2025-06-03
+I0267,Ensenada,Farmacia,Primeros Auxilios,Surtimax,42,45,270,Bajo,2009.84,1185.16,55,2025-03-28,2025-06-17
+I0268,Tecate,Farmacia,Primeros Auxilios,Surtimax,170,46,276,En Tránsito,349.32,6777.15,8,2025-03-30,2025-06-17
+I0269,Rosarito,Farmacia,Primeros Auxilios,Proveedor Norte SA,256,66,396,En Tránsito,899.86,7262.63,35,2025-02-26,2025-06-19
+I0270,San Quintín,Farmacia,Primeros Auxilios,Logística Frontera,416,53,318,Sobrestock,2510.7,3113.16,62,2025-04-11,2025-07-14
+I0271,Tijuana,Farmacia,Bebés,Importaciones Mex,453,27,162,Sobrestock,2128.54,4248.82,77,2025-03-11,2025-06-02
+I0272,Mexicali,Farmacia,Bebés,Logística Frontera,328,37,222,Sobrestock,3677.06,1901.77,43,2025-05-02,2025-06-04
+I0273,Ensenada,Farmacia,Bebés,Mayoreo TJ,419,22,132,Sobrestock,4664.19,3634.41,17,2025-04-23,2025-06-11
+I0274,Tecate,Farmacia,Bebés,Logística Frontera,228,26,156,Sobrestock,648.18,1123.5,23,2025-04-23,2025-06-05
+I0275,Rosarito,Farmacia,Bebés,Logística Frontera,500,42,252,Sobrestock,365.42,7985.22,50,2025-04-26,2025-06-21
+I0276,San Quintín,Farmacia,Bebés,Importaciones Mex,192,60,360,En Tránsito,481.34,1819.48,88,2025-03-14,2025-07-02
+I0277,Tijuana,Farmacia,Anteojos,Comercial Baja,217,21,126,Sobrestock,2575.31,5773.66,20,2025-04-24,2025-07-13
+I0278,Mexicali,Farmacia,Anteojos,Mayoreo TJ,483,77,462,Sobrestock,569.12,4740.95,30,2025-04-14,2025-07-13
+I0279,Ensenada,Farmacia,Anteojos,Importaciones Mex,83,28,168,Óptimo,634.5,580.16,23,2025-05-23,2025-06-28
+I0280,Tecate,Farmacia,Anteojos,Logística Frontera,40,25,150,Óptimo,2431.17,7139.67,88,2025-04-02,2025-06-01
+I0281,Rosarito,Farmacia,Anteojos,Importaciones Mex,131,75,450,En Tránsito,418.46,6903.84,22,2025-02-06,2025-07-18
+I0282,San Quintín,Farmacia,Anteojos,Surtimax,338,22,132,Sobrestock,4133.57,4685.41,39,2025-03-07,2025-06-21
+I0283,Tijuana,Farmacia,Termómetros,Logística Frontera,463,52,312,Sobrestock,1753.89,5176.23,16,2025-05-21,2025-06-26
+I0284,Mexicali,Farmacia,Termómetros,Logística Frontera,274,49,294,Sobrestock,1033.29,86.64,37,2025-04-18,2025-06-10
+I0285,Ensenada,Farmacia,Termómetros,Abastos del Pacífico,134,53,318,Óptimo,4170.78,1478.01,27,2025-02-04,2025-05-31
+I0286,Tecate,Farmacia,Termómetros,Proveedor Norte SA,299,30,180,Sobrestock,4170.72,864.88,71,2025-05-27,2025-08-01
+I0287,Rosarito,Farmacia,Termómetros,Abastos del Pacífico,31,76,456,Bajo,3195.99,4812.1,80,2025-04-14,2025-06-25
+I0288,San Quintín,Farmacia,Termómetros,Mayoreo TJ,75,68,408,En Tránsito,4074.43,503.9,14,2025-03-24,2025-06-22

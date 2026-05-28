@@ -477,11 +477,410 @@
       max-height:90px;
       object-fit:contain;
     }
+/* =========================
+   ANALYTICS SECTION
+========================= */
+
+.analytics-section{
+
+  max-width:none;
+
+  background:
+  linear-gradient(
+    135deg,
+    #07111f,
+    #0f172a,
+    #111827
+  );
+
+  padding:120px 40px;
+
+  margin-top:80px;
+  margin-bottom:80px;
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.analytics-section::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:-200px;
+  right:-200px;
+
+  width:500px;
+  height:500px;
+
+  background:
+  radial-gradient(
+    rgba(59,130,246,0.18),
+    transparent 70%
+  );
+
+  border-radius:50%;
+}
+
+.analytics-section::after{
+
+  content:"";
+
+  position:absolute;
+
+  bottom:-250px;
+  left:-250px;
+
+  width:600px;
+  height:600px;
+
+  background:
+  radial-gradient(
+    rgba(96,165,250,0.12),
+    transparent 70%
+  );
+
+  border-radius:50%;
+}
+
+.analytics-header{
+
+  position:relative;
+  z-index:2;
+
+  text-align:center;
+
+  max-width:900px;
+
+  margin:auto auto 80px auto;
+}
+
+.analytics-badge{
+
+  display:inline-block;
+
+  background:
+  rgba(59,130,246,0.15);
+
+  color:#93c5fd;
+
+  border:
+  1px solid rgba(147,197,253,0.25);
+
+  padding:10px 18px;
+
+  border-radius:999px;
+
+  font-size:14px;
+  font-weight:700;
+
+  letter-spacing:1px;
+
+  margin-bottom:25px;
+}
+
+.analytics-header h2{
+
+  color:white;
+
+  font-size:58px;
+
+  margin-bottom:25px;
+}
+
+.analytics-header p{
+
+  color:
+  rgba(255,255,255,0.75);
+
+  font-size:22px;
+}
+
+.analytics-grid{
+
+  position:relative;
+  z-index:2;
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:30px;
+
+  max-width:1300px;
+
+  margin:auto;
+}
+
+.analytics-card{
+
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  border-radius:28px;
+
+  padding:40px 30px;
+
+  text-align:center;
+
+  backdrop-filter:blur(14px);
+
+  transition:all .35s ease;
+}
+
+.analytics-card:hover{
+
+  transform:translateY(-12px);
+
+  background:
+  rgba(255,255,255,0.08);
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,0.35);
+}
+
+.analytics-card img{
+
+  width:130px;
+  height:70px;
+
+  object-fit:contain;
+
+  margin-bottom:25px;
+}
+
+.analytics-card h3{
+
+  color:white;
+
+  font-size:28px;
+
+  margin-bottom:15px;
+}
+
+.analytics-card p{
+
+  color:
+  rgba(255,255,255,0.72);
+
+  font-size:17px;
+}
+
+.analytics-bottom{
+
+  position:relative;
+  z-index:2;
+
+  max-width:950px;
+
+  margin:80px auto 0 auto;
+
+  background:
+  linear-gradient(
+    135deg,
+    rgba(37,99,235,0.22),
+    rgba(96,165,250,0.12)
+  );
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  border-radius:30px;
+
+  padding:40px;
+
+  text-align:center;
+
+  backdrop-filter:blur(10px);
+}
+
+.analytics-bottom p{
+
+  color:white;
+
+  font-size:24px;
+
+  margin:0;
+}
+
+@media(max-width:768px){
+
+  .analytics-header h2{
+    font-size:40px;
+  }
+
+  .analytics-header p{
+    font-size:18px;
+  }
+
+  .analytics-bottom p{
+    font-size:18px;
+  }
+
+}
+
+/* =========================
+   FLOW SECTION
+========================= */
+
+.flow-section{
+
+  max-width:none;
+
+  padding:120px 40px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #f8fafc,
+    #eef4ff
+  );
+}
+
+.flow-container{
+
+  max-width:1300px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(450px,1fr));
+
+  gap:70px;
+
+  align-items:center;
+}
+
+.flow-badge{
+
+  display:inline-block;
+
+  background:#dbeafe;
+
+  color:#0b3d91;
+
+  padding:10px 18px;
+
+  border-radius:999px;
+
+  font-size:14px;
+  font-weight:700;
+
+  letter-spacing:1px;
+
+  margin-bottom:25px;
+}
+
+.flow-text h2{
+
+  font-size:56px;
+
+  line-height:1.1;
+
+  margin-bottom:30px;
+
+  color:#0f172a;
+}
+
+.flow-text p{
+
+  font-size:21px;
+
+  color:#475569;
+
+  margin-bottom:40px;
+}
+
+.flow-points{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:18px;
+}
+
+.flow-point{
+
+  background:white;
+
+  padding:18px 24px;
+
+  border-radius:18px;
+
+  font-size:17px;
+  font-weight:600;
+
+  color:#1e293b;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.05);
+
+  border:
+  1px solid rgba(0,0,0,0.04);
+
+  transition:.3s ease;
+}
+
+.flow-point:hover{
+
+  transform:translateX(8px);
+
+  box-shadow:
+  0 15px 35px rgba(0,0,0,0.08);
+}
+
+.flow-image{
+
+  position:relative;
+}
+
+.flow-image img{
+
+  width:100%;
+
+  border-radius:30px;
+
+  box-shadow:
+  0 25px 60px rgba(15,23,42,0.18);
+
+  border:
+  1px solid rgba(0,0,0,0.05);
+}
+
+@media(max-width:768px){
+
+  .flow-section{
+    padding:90px 25px;
+  }
+
+  .flow-text h2{
+    font-size:40px;
+  }
+
+  .flow-text p{
+    font-size:18px;
+  }
+
+  .flow-container{
+    grid-template-columns:1fr;
+  }
+
+}
+
 
     /* =========================
        CTA
     ========================= */
-
+    
     .cta{
       background:
       linear-gradient(135deg,#0b3d91,#1e62c6);
@@ -808,6 +1207,183 @@
   </section>
 
   <!-- CLIENTES -->
+  <!-- ANALISIS DE DATOS -->
+
+<section class="analytics-section">
+
+  <div class="analytics-header">
+
+    <span class="analytics-badge">
+      BUSINESS INTELLIGENCE
+    </span>
+
+    <h2>¿Por qué usar análisis de datos?</h2>
+
+    <p>
+      Las empresas más competitivas del mundo utilizan análisis de datos y 
+      Business Intelligence para optimizar operaciones, reducir costos 
+      y tomar decisiones más rápidas e inteligentes.
+    </p>
+
+  </div>
+
+  <div class="analytics-grid">
+
+    <!-- AMAZON -->
+
+    <div class="analytics-card">
+
+      <img 
+        src="static/images/amazon.png"
+        alt="Amazon"
+      >
+
+      <h3><strong>Amazon</strong></h3>
+
+      <p>
+        Logística inteligente y predicción avanzada de demanda.
+      </p>
+
+    </div>
+
+    <!-- NETFLIX -->
+
+    <div class="analytics-card">
+
+      <img 
+        src="static/images/netflix.png"
+        alt="Netflix"
+      >
+
+      <h3><strong>Netflix</strong></h3>
+
+      <p>
+        Recomendaciones inteligentes y análisis avanzado de usuarios.
+      </p>
+
+    </div>
+
+    <!-- TESLA -->
+
+    <div class="analytics-card">
+
+      <img 
+        src="static/images/tesla.png"
+        alt="Tesla"
+      >
+
+      <h3><strong>Tesla</strong></h3>
+
+      <p>
+        Monitoreo operativo y análisis en tiempo real.
+      </p>
+
+    </div>
+
+    <!-- WALMART -->
+
+    <div class="analytics-card">
+
+      <img 
+        src="static/images/walmart.png"
+        alt="Walmart"
+      >
+
+      <h3><strong>Walmart</strong></h3>
+
+      <p>
+        Optimización logística y control inteligente de inventarios.
+      </p>
+
+    </div>
+
+    <!-- GOOGLE -->
+
+    <div class="analytics-card">
+
+      <img 
+        src="static/images/google.png"
+        alt="Google"
+      >
+
+      <h3><strong>Google</strong></h3>
+
+      <p>
+        Inteligencia artificial y análisis masivo de datos.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="analytics-bottom">
+
+    <p>
+      En <strong>Dataset MX</strong> ayudamos a implementar esa misma visión 
+      mediante analítica, automatización y Business Intelligence.
+    </p>
+
+  </div>
+  
+</section>
+    <!-- FLUJO ANALITICO -->
+
+<section class="flow-section">
+
+  <div class="flow-container">
+
+    <div class="flow-text">
+
+      <span class="flow-badge">
+        DATA PIPELINE
+      </span>
+
+      <h2>
+        Así se ve un flujo de análisis de datos
+      </h2>
+
+      <p>
+        Centralizamos información de diferentes fuentes, transformamos 
+        los datos mediante procesos ETL y los convertimos en dashboards 
+        e indicadores útiles para la toma de decisiones.
+      </p>
+
+      <div class="flow-points">
+
+        <div class="flow-point">
+          📥 Integración de múltiples fuentes
+        </div>
+
+        <div class="flow-point">
+          ⚙️ Procesos ETL y limpieza de datos
+        </div>
+
+        <div class="flow-point">
+          📊 Dashboards e indicadores en tiempo real
+        </div>
+
+        <div class="flow-point">
+          🤖 Automatización y Business Intelligence
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="flow-image">
+
+      <img 
+        src="static/images/proceso.png" 
+        alt="Flujo de análisis de datos"
+      >
+
+    </div>
+
+  </div>
+
+</section>
+
+
 
   <section>
 
